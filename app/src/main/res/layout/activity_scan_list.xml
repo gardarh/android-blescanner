@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_scan_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.noxmedical.blescanner.ScanListActivity">
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/sla_rl_left">
+
+        <TextView
+            android:text="Classic scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_tv_classicscan"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <ToggleButton
+            android:text="ToggleClassic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_toggle_classicscan"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/sla_tv_classicscan"/>
+
+
+        <TextView
+            android:text="LE Scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_tv_lescan"
+            android:layout_below="@+id/sla_toggle_classicscan"
+            android:layout_alignParentStart="true"/>
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_toggle_lescan"
+            android:layout_below="@+id/sla_tv_lescan"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:text="LE Advertise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_tv_leadvertise"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sla_toggle_lescan"
+            />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_toggle_advertise"
+            tools:text="Scanning"
+            android:layout_below="@+id/sla_tv_leadvertise"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sla_toggle_advertise"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sla_tablet_info"
+
+            android:text="attr1: y\nattr2: n\n att3: y"
+            />
+        <ListView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sla_list"
+            android:layout_below="@id/sla_tablet_info"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/sla_rl_left"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:text="11:22:33:44:55:66"
+            android:id="@+id/sla_tv_status_heading"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device status is as follows"
+            android:layout_below="@id/sla_tv_status_heading"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sla_tv_status"/>
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BLE scanner</string>
+    <string name="invalid_ble_message">Invalid BLE message</string>
+</resources>
